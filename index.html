@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Country code</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+  </head>
+
+  <body class="bg-primary">
+    <div class="container">
+      <div class="row">
+    <div class="col text-center">
+      <h1>COUNTRY CALLING CODES</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="form-group">
+          <label for="countries">Select A Country</label>
+          <select id="countries" class="selectpicker form-control" data-live-search="true">
+            <option selected id="choose">Choose A country</option>
+            <optgroup label="Africa">
+              <option>Algeria</option>
+              <option>Benin</option>
+              <option>Cameroon</option>
+              <option>Djibouti</option>
+              <option>Egypt</option>
+              <option>Gabon</option>
+              <option>Kenya</option>
+              <option>Lesotho</option>
+              <option>Madagascar</option>
+              <option>Namibia</option>
+              <option>Rwanda</option>
+              <option>South Africa</option>
+              <option>Tanzania</option>
+              <option>Uganda</option>
+              <option>Zambia</option>
+            </optgroup>
+            <optgroup label="Europe" >
+              <option>Greece</option>
+              <option>Netherlands</option>
+              <option>Belgium</option>
+              <option>France</option>
+              <option>Spain</option>
+              <option> Portugal</option>
+              <option>Ireland</option>
+              <option>Italy</option>
+            </optgroup>
+          </select>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <button type="button" name="button" class="btn btn-outline btn-lg" id="btn" onclick="checkcode()">Get country code</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="well well-lg" id="displaycontent"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+<footer class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <p>Coded with love by ErickMateli,Copyright &copy; 2017</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
